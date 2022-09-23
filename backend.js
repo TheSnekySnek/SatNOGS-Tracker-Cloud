@@ -1,7 +1,10 @@
 const express = require('express')
+
 const axios = require('axios');
 const app = express()
 const port = 8080
+const dotenv = require('dotenv')
+dotenv.config()
 
 // Load the TLE file from the S3 bucket
 const AWS = require('aws-sdk')

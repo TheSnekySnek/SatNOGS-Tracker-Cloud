@@ -2,6 +2,8 @@ const express = require('express')
 const axios = require('axios');
 var app = express();
 var port = 3000;
+const dotenv = require('dotenv')
+dotenv.config()
 
 const BACKEND_URL = process.env.BACKEND_URL || "http://localhost:8080"
 
